@@ -1,0 +1,11 @@
+---
+layout: layout.html
+---
+---
+tags: index
+---
+
+{% for wtf in collections.wtf %}
+<h2><a href="{{ wtf.url }}">{{ wtf.data.title }}</a></h2>
+<p>{{ wtf.content }}</p>
+{% endfor %}
